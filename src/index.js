@@ -15,3 +15,19 @@ for (let i = 0; i < navLinkElm.length; i++) {
     navBarElm.classList.add('nav-closed');
   });
 }
+
+let notordered = true;
+
+const objednatElm = document.querySelector('.order-btn');
+const drinkcupElm = document.querySelector('.drink__cup');
+objednatElm.addEventListener('click', () => {
+  if (notordered) {
+    objednatElm.textContent = 'Zrušit';
+    drinkcupElm.classList.add('drink__cup--selected');
+    notordered = false;
+  } else {
+    objednatElm.textContent = 'Objednat';
+    drinkcupElm.classList.remove('drink__cup--selected');
+    notordered = true;
+  }
+});
