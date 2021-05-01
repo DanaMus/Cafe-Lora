@@ -246,6 +246,13 @@ nav a:hover {
   background-attachment: fixed;
 }
 
+.gallery p {
+  text-align: center;
+  font-size: 3em;
+  padding-top: 200px;
+  text-shadow: 2px 2px black;
+}
+
 .contacts {
   margin-bottom: 4rem;
 
